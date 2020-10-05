@@ -1,0 +1,4 @@
+*.htm
+*.png
+test-output
+/target/

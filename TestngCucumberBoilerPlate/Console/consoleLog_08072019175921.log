@@ -1,0 +1,177 @@
+projectVal : CMF
+User : 
+releaseName : 
+Selected Env : DEVINT
+Test Cycle  : 
+rajum
+
+Selected Values :[Ljava.lang.Object;@20f93b70--:--1
+TC_26161538
+1
+1
+TC Found : TC_26161538
+Feature: Execution of CMF18MR10 scripts
+
+  Background: 
+    Given : User loads the "CMF18MR10" json file
+
+  Scenario Outline: GSAP_CMF adding Merchant Currencies
+    Given User execute testcaseId 'TC_26161538' for testcasename 'CMF_AP_Zero to 100 currencies could be assigned to the merchant' and module 'TestCases->Subject->CMF->2018 Test Cases->18.10 Test Cases->Multiple Currencies - BCR323->AP' Execute "<ExecuteScenario>"
+    When Launch the Application and Login with the User "<UserName>" Region "<Region>"
+    When User navigates to Add Merchant Page
+    And User Enters parent customer
+    And User Creates unique Merchant ID
+    And User fill overview details of Merchant
+    And User fill Address details of Merchant
+    And User click Save to create Pending Merchant
+    And User Adding Multiple Currencies to Merchant
+
+    Examples: 
+      | ExecuteScenario | UserName | Region |
+      | Yes             | qatest10 | AP     |
+
+##############EOF#############
+##############EOF#############
+##############EOF#############
+##############EOF#############
+##############EOF#############
+##############EOF#############
+##############EOF#############
+##############EOF#############
+Feature file updated successfully
+D:\CMF_BDD\testng.xml
+[TestNG] Running:
+  D:\CMF_BDD\testng.xml
+
+Selected Env is : DEVINT and wait time is: 120
+
+Map is {TC_26161840={Merchant_Currencies=840@@124@@971@@012@@032@@051@@533@@036@@031@@944@@044@@048@@764@@590@@052@@974@@084@@060@@937@@928@@068@@076@@096@@975@@108@@132@@136@@936@@952@@950@@953@@152@@170@@174@@977@@558@@188@@191@@192@@203@@270@@208@@807@@262@@678@@214@@704@@951@@818@@232@@230@@978@@954@@238@@242@@348@@976@@292@@332@@600@@624@@324@@328@@344@@352@@356@@364@@368@@388@@400@@404@@598@@418@@233@@414@@973@@104@@981@@428@@422@@008@@340@@694@@946@@430@@434@@748@@440@@969@@454@@458@@795@@480@@484@@498@@504@@943@@566@@516@@524, Merchant_ParentCustomerNumber=9490252951, Merchant_DBAName=Automation Test DBA name1, Merchant_LegalName=101 Cards Merchant, Merchant_StoreId=1234, Merchant_BinBlocking=Customer, Merchant_Address1=1110123 Wellington Dr North East, Merchant_Address2=HIGHLANDS, Merchant_city=MIAMI, Merchant_Country=840, Merchant_State=Georgia, Merchant_PostalCode=30001, Merchant_PrimaryContact=7704445555, Merchant_MerchantPhoneNumber=7704445555, Merchant_CustomerServicePhone=7701114444, Merchant_EmailAddress=QA@QA.com, Merchant_check=check, Merchant_DebitDetails_FNSNumber=123456, Merchant_DebitDetails_PinLessGateway=445566, Merchant_Save_VerifyMsg=Merchant successfully created., Merchant_AddedCurrencyCode_Verify=Successfully Added the Merchant Currencies.}, TC_26161538={Merchant_Currencies=840@@124@@971@@012@@032@@051@@533@@036@@031@@944@@044@@048@@764@@590@@052@@974@@084@@060@@937@@928@@068@@076@@096@@975@@108@@132@@136@@936@@952@@950@@953@@152@@170@@174@@977@@558@@188@@191@@192@@203@@270@@208@@807@@262@@678@@214@@704@@951@@818@@232@@230@@978@@954@@238@@242@@348@@976@@292@@332@@600@@624@@324@@328@@344@@352@@356@@364@@368@@388@@400@@404@@598@@418@@233@@414@@973@@104@@981@@428@@422@@008@@340@@694@@946@@430@@434@@748@@440@@969@@454@@458@@795@@480@@484@@498@@504@@943@@566@@516@@524, Merchant_ParentCustomerNumber=9490252951, Merchant_DBAName=Automation Test DBA name1, Merchant_LegalName=101 Cards Merchant, Merchant_StoreId=1234, Merchant_BinBlocking=Customer, Merchant_Address1=1110123 Wellington Dr North East, Merchant_Address2=HIGHLANDS, Merchant_city=MIAMI, Merchant_Country=840, Merchant_State=Georgia, Merchant_PostalCode=30001, Merchant_PrimaryContact=7704445555, Merchant_MerchantPhoneNumber=7704445555, Merchant_CustomerServicePhone=7701114444, Merchant_EmailAddress=QA@QA.com, Merchant_check=check, Merchant_DebitDetails_FNSNumber=123456, Merchant_DebitDetails_PinLessGateway=445566, Merchant_Save_VerifyMsg=Merchant successfully created., Merchant_AddedCurrencyCode_Verify=Successfully Added the Merchant Currencies.}, TC_26161555={Merchant_Currencies=840@@124@@971@@012@@032@@051@@533@@036@@031@@944@@044@@048@@764@@590@@052@@974@@084@@060@@937@@928@@068@@076@@096@@975@@108@@132@@136@@936@@952@@950@@953@@152@@170@@174@@977@@558@@188@@191@@192@@203@@270@@208@@807@@262@@678@@214@@704@@951@@818@@232@@230@@978@@954@@238@@242@@348@@976@@292@@332@@600@@624@@324@@328@@344@@352@@356@@364@@368@@388@@400@@404@@598@@418@@233@@414@@973@@104@@981@@428@@422@@008@@340@@694@@946@@430@@434@@748@@440@@969@@454@@458@@795@@480@@484@@498@@504@@943@@566@@516@@524@@376, Merchant_ParentCustomerNumber=9490252951, Merchant_DBAName=Automation Test DBA name1, Merchant_LegalName=101 Cards Merchant, Merchant_StoreId=1234, Merchant_BinBlocking=Customer, Merchant_Address1=1110123 Wellington Dr North East, Merchant_Address2=HIGHLANDS, Merchant_city=MIAMI, Merchant_Country=840, Merchant_State=Georgia, Merchant_PostalCode=30001, Merchant_PrimaryContact=7704445555, Merchant_MerchantPhoneNumber=7704445555, Merchant_CustomerServicePhone=7701114444, Merchant_EmailAddress=QA@QA.com, Merchant_check=check, Merchant_DebitDetails_FNSNumber=123456, Merchant_DebitDetails_PinLessGateway=445566, Merchant_Save_VerifyMsg=Merchant successfully created., Merchant_AddedCurrencyCode_Verify_Error=Merchant can be assigned to a maximum of 100 currencies only. [039163]}, TC_26161838={Merchant_Currencies=840@@124@@971@@012@@032@@051@@533@@036@@031@@944@@044@@048@@764@@590@@052@@974@@084@@060@@937@@928@@068@@076@@096@@975@@108@@132@@136@@936@@952@@950@@953@@152@@170@@174@@977@@558@@188@@191@@192@@203@@270@@208@@807@@262@@678@@214@@704@@951@@818@@232@@230@@978@@954@@238@@242@@348@@976@@292@@332@@600@@624@@324@@328@@344@@352@@356@@364@@368@@388@@400@@404@@598@@418@@233@@414@@973@@104@@981@@428@@422@@008@@340@@694@@946@@430@@434@@748@@440@@969@@454@@458@@795@@480@@484@@498@@504@@943@@566@@516@@524@@376, Merchant_ParentCustomerNumber=9490252951, Merchant_DBAName=Automation Test DBA name1, Merchant_LegalName=101 Cards Merchant, Merchant_StoreId=1234, Merchant_BinBlocking=Customer, Merchant_Address1=1110123 Wellington Dr North East, Merchant_Address2=HIGHLANDS, Merchant_city=MIAMI, Merchant_Country=840, Merchant_State=Georgia, Merchant_PostalCode=30001, Merchant_PrimaryContact=7704445555, Merchant_MerchantPhoneNumber=7704445555, Merchant_CustomerServicePhone=7701114444, Merchant_EmailAddress=QA@QA.com, Merchant_check=check, Merchant_DebitDetails_FNSNumber=123456, Merchant_DebitDetails_PinLessGateway=445566, Merchant_Save_VerifyMsg=Merchant successfully created., Merchant_AddedCurrencyCode_Verify_Error=Merchant can be assigned to a maximum of 100 currencies only. [039163]}, TC_26161714={Merchant_Currencies=840@@124@@971@@012@@032@@051@@533@@036@@031@@944@@044@@048@@764@@590@@052@@974@@084@@060@@937@@928@@068@@076@@096@@975@@108@@132@@136@@936@@952@@950@@953@@152@@170@@174@@977@@558@@188@@191@@192@@203@@270@@208@@807@@262@@678@@214@@704@@951@@818@@232@@230@@978@@954@@238@@242@@348@@976@@292@@332@@600@@624@@324@@328@@344@@352@@356@@364@@368@@388@@400@@404@@598@@418@@233@@414@@973@@104@@981@@428@@422@@008@@340@@694@@946@@430@@434@@748@@440@@969@@454@@458@@795@@480@@484@@498@@504@@943@@566@@516@@524@@376, Merchant_ParentCustomerNumber=9490252951, Merchant_DBAName=Automation Test DBA name1, Merchant_LegalName=101 Cards Merchant, Merchant_StoreId=1234, Merchant_BinBlocking=Customer, Merchant_Address1=1110123 Wellington Dr North East, Merchant_Address2=HIGHLANDS, Merchant_city=MIAMI, Merchant_Country=840, Merchant_State=Georgia, Merchant_PostalCode=30001, Merchant_PrimaryContact=7704445555, Merchant_MerchantPhoneNumber=7704445555, Merchant_CustomerServicePhone=7701114444, Merchant_EmailAddress=QA@QA.com, Merchant_check=check, Merchant_DebitDetails_FNSNumber=123456, Merchant_DebitDetails_PinLessGateway=445566, Merchant_Save_VerifyMsg=Merchant successfully created., Merchant_AddedCurrencyCode_Verify_Error=Merchant can be assigned to a maximum of 100 currencies only. [039163]}, TC_26161839={Merchant_Currencies=840@@124@@971@@012@@032@@051@@533@@036@@031@@944@@044@@048@@764@@590@@052@@974@@084@@060@@937@@928@@068@@076@@096@@975@@108@@132@@136@@936@@952@@950@@953@@152@@170@@174@@977@@558@@188@@191@@192@@203@@270@@208@@807@@262@@678@@214@@704@@951@@818@@232@@230@@978@@954@@238@@242@@348@@976@@292@@332@@600@@624@@324@@328@@344@@352@@356@@364@@368@@388@@400@@404@@598@@418@@233@@414@@973@@104@@981@@428@@422@@008@@340@@694@@946@@430@@434@@748@@440@@969@@454@@458@@795@@480@@484@@498@@504@@943@@566@@516@@524@@376, Merchant_ParentCustomerNumber=9490252951, Merchant_DBAName=Automation Test DBA name1, Merchant_LegalName=101 Cards Merchant, Merchant_StoreId=1234, Merchant_BinBlocking=Customer, Merchant_Address1=1110123 Wellington Dr North East, Merchant_Address2=HIGHLANDS, Merchant_city=MIAMI, Merchant_Country=840, Merchant_State=Georgia, Merchant_PostalCode=30001, Merchant_PrimaryContact=7704445555, Merchant_MerchantPhoneNumber=7704445555, Merchant_CustomerServicePhone=7701114444, Merchant_EmailAddress=QA@QA.com, Merchant_check=check, Merchant_DebitDetails_FNSNumber=123456, Merchant_DebitDetails_PinLessGateway=445566, Merchant_Save_VerifyMsg=Merchant successfully created., Merchant_AddedCurrencyCode_Verify_Error=Merchant can be assigned to a maximum of 100 currencies only. [039163]}}
+Key is Merchant_Currencies; Value is 840@@124@@971@@012@@032@@051@@533@@036@@031@@944@@044@@048@@764@@590@@052@@974@@084@@060@@937@@928@@068@@076@@096@@975@@108@@132@@136@@936@@952@@950@@953@@152@@170@@174@@977@@558@@188@@191@@192@@203@@270@@208@@807@@262@@678@@214@@704@@951@@818@@232@@230@@978@@954@@238@@242@@348@@976@@292@@332@@600@@624@@324@@328@@344@@352@@356@@364@@368@@388@@400@@404@@598@@418@@233@@414@@973@@104@@981@@428@@422@@008@@340@@694@@946@@430@@434@@748@@440@@969@@454@@458@@795@@480@@484@@498@@504@@943@@566@@516@@524
+Key is Merchant_ParentCustomerNumber; Value is 9490252951
+Key is Merchant_DBAName; Value is Automation Test DBA name1
+Key is Merchant_LegalName; Value is 101 Cards Merchant
+Key is Merchant_StoreId; Value is 1234
+Key is Merchant_BinBlocking; Value is Customer
+Key is Merchant_Address1; Value is 1110123 Wellington Dr North East
+Key is Merchant_Address2; Value is HIGHLANDS
+Key is Merchant_city; Value is MIAMI
+Key is Merchant_Country; Value is 840
+Key is Merchant_State; Value is Georgia
+Key is Merchant_PostalCode; Value is 30001
+Key is Merchant_PrimaryContact; Value is 7704445555
+Key is Merchant_MerchantPhoneNumber; Value is 7704445555
+Key is Merchant_CustomerServicePhone; Value is 7701114444
+Key is Merchant_EmailAddress; Value is QA@QA.com
+Key is Merchant_check; Value is check
+Key is Merchant_DebitDetails_FNSNumber; Value is 123456
+Key is Merchant_DebitDetails_PinLessGateway; Value is 445566
+Key is Merchant_Save_VerifyMsg; Value is Merchant successfully created.
+Key is Merchant_AddedCurrencyCode_Verify; Value is Successfully Added the Merchant Currencies.
+Key is Merchant_Currencies; Value is 840@@124@@971@@012@@032@@051@@533@@036@@031@@944@@044@@048@@764@@590@@052@@974@@084@@060@@937@@928@@068@@076@@096@@975@@108@@132@@136@@936@@952@@950@@953@@152@@170@@174@@977@@558@@188@@191@@192@@203@@270@@208@@807@@262@@678@@214@@704@@951@@818@@232@@230@@978@@954@@238@@242@@348@@976@@292@@332@@600@@624@@324@@328@@344@@352@@356@@364@@368@@388@@400@@404@@598@@418@@233@@414@@973@@104@@981@@428@@422@@008@@340@@694@@946@@430@@434@@748@@440@@969@@454@@458@@795@@480@@484@@498@@504@@943@@566@@516@@524
+Key is Merchant_ParentCustomerNumber; Value is 9490252951
+Key is Merchant_DBAName; Value is Automation Test DBA name1
+Key is Merchant_LegalName; Value is 101 Cards Merchant
+Key is Merchant_StoreId; Value is 1234
+Key is Merchant_BinBlocking; Value is Customer
+Key is Merchant_Address1; Value is 1110123 Wellington Dr North East
+Key is Merchant_Address2; Value is HIGHLANDS
+Key is Merchant_city; Value is MIAMI
+Key is Merchant_Country; Value is 840
+Key is Merchant_State; Value is Georgia
+Key is Merchant_PostalCode; Value is 30001
+Key is Merchant_PrimaryContact; Value is 7704445555
+Key is Merchant_MerchantPhoneNumber; Value is 7704445555
+Key is Merchant_CustomerServicePhone; Value is 7701114444
+Key is Merchant_EmailAddress; Value is QA@QA.com
+Key is Merchant_check; Value is check
+Key is Merchant_DebitDetails_FNSNumber; Value is 123456
+Key is Merchant_DebitDetails_PinLessGateway; Value is 445566
+Key is Merchant_Save_VerifyMsg; Value is Merchant successfully created.
+Key is Merchant_AddedCurrencyCode_Verify; Value is Successfully Added the Merchant Currencies.
+Key is Merchant_Currencies; Value is 840@@124@@971@@012@@032@@051@@533@@036@@031@@944@@044@@048@@764@@590@@052@@974@@084@@060@@937@@928@@068@@076@@096@@975@@108@@132@@136@@936@@952@@950@@953@@152@@170@@174@@977@@558@@188@@191@@192@@203@@270@@208@@807@@262@@678@@214@@704@@951@@818@@232@@230@@978@@954@@238@@242@@348@@976@@292@@332@@600@@624@@324@@328@@344@@352@@356@@364@@368@@388@@400@@404@@598@@418@@233@@414@@973@@104@@981@@428@@422@@008@@340@@694@@946@@430@@434@@748@@440@@969@@454@@458@@795@@480@@484@@498@@504@@943@@566@@516@@524
+Key is Merchant_ParentCustomerNumber; Value is 9490252951
+Key is Merchant_DBAName; Value is Automation Test DBA name1
+Key is Merchant_LegalName; Value is 101 Cards Merchant
+Key is Merchant_StoreId; Value is 1234
+Key is Merchant_BinBlocking; Value is Customer
+Key is Merchant_Address1; Value is 1110123 Wellington Dr North East
+Key is Merchant_Address2; Value is HIGHLANDS
+Key is Merchant_city; Value is MIAMI
+Key is Merchant_Country; Value is 840
+Key is Merchant_State; Value is Georgia
+Key is Merchant_PostalCode; Value is 30001
+Key is Merchant_PrimaryContact; Value is 7704445555
+Key is Merchant_MerchantPhoneNumber; Value is 7704445555
+Key is Merchant_CustomerServicePhone; Value is 7701114444
+Key is Merchant_EmailAddress; Value is QA@QA.com
+Key is Merchant_check; Value is check
+Key is Merchant_DebitDetails_FNSNumber; Value is 123456
+Key is Merchant_DebitDetails_PinLessGateway; Value is 445566
+Key is Merchant_Save_VerifyMsg; Value is Merchant successfully created.
+Key is Merchant_AddedCurrencyCode_Verify; Value is Successfully Added the Merchant Currencies.
+Key is Merchant_Currencies; Value is 840@@124@@971@@012@@032@@051@@533@@036@@031@@944@@044@@048@@764@@590@@052@@974@@084@@060@@937@@928@@068@@076@@096@@975@@108@@132@@136@@936@@952@@950@@953@@152@@170@@174@@977@@558@@188@@191@@192@@203@@270@@208@@807@@262@@678@@214@@704@@951@@818@@232@@230@@978@@954@@238@@242@@348@@976@@292@@332@@600@@624@@324@@328@@344@@352@@356@@364@@368@@388@@400@@404@@598@@418@@233@@414@@973@@104@@981@@428@@422@@008@@340@@694@@946@@430@@434@@748@@440@@969@@454@@458@@795@@480@@484@@498@@504@@943@@566@@516@@524
+Key is Merchant_ParentCustomerNumber; Value is 9490252951
+Key is Merchant_DBAName; Value is Automation Test DBA name1
+Key is Merchant_LegalName; Value is 101 Cards Merchant
+Key is Merchant_StoreId; Value is 1234
+Key is Merchant_BinBlocking; Value is Customer
+Key is Merchant_Address1; Value is 1110123 Wellington Dr North East
+Key is Merchant_Address2; Value is HIGHLANDS
+Key is Merchant_city; Value is MIAMI
+Key is Merchant_Country; Value is 840
+Key is Merchant_State; Value is Georgia
+Key is Merchant_PostalCode; Value is 30001
+Key is Merchant_PrimaryContact; Value is 7704445555
+Key is Merchant_MerchantPhoneNumber; Value is 7704445555
+Key is Merchant_CustomerServicePhone; Value is 7701114444
+Key is Merchant_EmailAddress; Value is QA@QA.com
+Key is Merchant_check; Value is check
+Key is Merchant_DebitDetails_FNSNumber; Value is 123456
+Key is Merchant_DebitDetails_PinLessGateway; Value is 445566
+Key is Merchant_Save_VerifyMsg; Value is Merchant successfully created.
+Key is Merchant_AddedCurrencyCode_Verify; Value is Successfully Added the Merchant Currencies.
+Key is Merchant_Currencies; Value is 840@@124@@971@@012@@032@@051@@533@@036@@031@@944@@044@@048@@764@@590@@052@@974@@084@@060@@937@@928@@068@@076@@096@@975@@108@@132@@136@@936@@952@@950@@953@@152@@170@@174@@977@@558@@188@@191@@192@@203@@270@@208@@807@@262@@678@@214@@704@@951@@818@@232@@230@@978@@954@@238@@242@@348@@976@@292@@332@@600@@624@@324@@328@@344@@352@@356@@364@@368@@388@@400@@404@@598@@418@@233@@414@@973@@104@@981@@428@@422@@008@@340@@694@@946@@430@@434@@748@@440@@969@@454@@458@@795@@480@@484@@498@@504@@943@@566@@516@@524
+Key is Merchant_ParentCustomerNumber; Value is 9490252951
+Key is Merchant_DBAName; Value is Automation Test DBA name1
+Key is Merchant_LegalName; Value is 101 Cards Merchant
+Key is Merchant_StoreId; Value is 1234
+Key is Merchant_BinBlocking; Value is Customer
+Key is Merchant_Address1; Value is 1110123 Wellington Dr North East
+Key is Merchant_Address2; Value is HIGHLANDS
+Key is Merchant_city; Value is MIAMI
+Key is Merchant_Country; Value is 840
+Key is Merchant_State; Value is Georgia
+Key is Merchant_PostalCode; Value is 30001
+Key is Merchant_PrimaryContact; Value is 7704445555
+Key is Merchant_MerchantPhoneNumber; Value is 7704445555
+Key is Merchant_CustomerServicePhone; Value is 7701114444
+Key is Merchant_EmailAddress; Value is QA@QA.com
+Key is Merchant_check; Value is check
+Key is Merchant_DebitDetails_FNSNumber; Value is 123456
+Key is Merchant_DebitDetails_PinLessGateway; Value is 445566
+Key is Merchant_Save_VerifyMsg; Value is Merchant successfully created.
+Key is Merchant_AddedCurrencyCode_Verify; Value is Successfully Added the Merchant Currencies.
+Key is Merchant_Currencies; Value is 840@@124@@971@@012@@032@@051@@533@@036@@031@@944@@044@@048@@764@@590@@052@@974@@084@@060@@937@@928@@068@@076@@096@@975@@108@@132@@136@@936@@952@@950@@953@@152@@170@@174@@977@@558@@188@@191@@192@@203@@270@@208@@807@@262@@678@@214@@704@@951@@818@@232@@230@@978@@954@@238@@242@@348@@976@@292@@332@@600@@624@@324@@328@@344@@352@@356@@364@@368@@388@@400@@404@@598@@418@@233@@414@@973@@104@@981@@428@@422@@008@@340@@694@@946@@430@@434@@748@@440@@969@@454@@458@@795@@480@@484@@498@@504@@943@@566@@516@@524
+Key is Merchant_ParentCustomerNumber; Value is 9490252951
+Key is Merchant_DBAName; Value is Automation Test DBA name1
+Key is Merchant_LegalName; Value is 101 Cards Merchant
+Key is Merchant_StoreId; Value is 1234
+Key is Merchant_BinBlocking; Value is Customer
+Key is Merchant_Address1; Value is 1110123 Wellington Dr North East
+Key is Merchant_Address2; Value is HIGHLANDS
+Key is Merchant_city; Value is MIAMI
+Key is Merchant_Country; Value is 840
+Key is Merchant_State; Value is Georgia
+Key is Merchant_PostalCode; Value is 30001
+Key is Merchant_PrimaryContact; Value is 7704445555
+Key is Merchant_MerchantPhoneNumber; Value is 7704445555
+Key is Merchant_CustomerServicePhone; Value is 7701114444
+Key is Merchant_EmailAddress; Value is QA@QA.com
+Key is Merchant_check; Value is check
+Key is Merchant_DebitDetails_FNSNumber; Value is 123456
+Key is Merchant_DebitDetails_PinLessGateway; Value is 445566
+Key is Merchant_Save_VerifyMsg; Value is Merchant successfully created.
+Key is Merchant_AddedCurrencyCode_Verify; Value is Successfully Added the Merchant Currencies.
+
+
+reportPackageName: stepDefinition

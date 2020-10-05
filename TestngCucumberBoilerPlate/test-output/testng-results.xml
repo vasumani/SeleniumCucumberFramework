@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="CMF_BDD" duration-ms="33" started-at="2019-03-11T13:37:12Z" finished-at="2019-03-11T13:37:12Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.webapp.executioner.ExecutionerClass@2a2ae6]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Run All Tests" duration-ms="33" started-at="2019-03-11T13:37:12Z" finished-at="2019-03-11T13:37:12Z">
+      <class name="com.webapp.executioner.ExecutionerClass">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.webapp.executioner.ExecutionerClass@2a2ae6]" name="setUp" is-config="true" duration-ms="832167" started-at="2019-03-11T18:53:20Z" finished-at="2019-03-11T19:07:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.webapp.executioner.ExecutionerClass@2a2ae6]" name="setUpClass" is-config="true" duration-ms="21" started-at="2019-03-11T19:07:12Z" finished-at="2019-03-11T19:07:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.webapp.executioner.ExecutionerClass@2a2ae6]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2019-03-11T19:07:12Z" finished-at="2019-03-11T19:07:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.webapp.executioner.ExecutionerClass@2a2ae6]" name="quit" is-config="true" duration-ms="2" started-at="2019-03-11T19:07:12Z" finished-at="2019-03-11T19:07:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.webapp.executioner.ExecutionerClass -->
+    </test> <!-- Run All Tests -->
+  </suite> <!-- CMF_BDD -->
+</testng-results>
